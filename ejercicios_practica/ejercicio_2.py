@@ -27,17 +27,31 @@ def promedio(numeros):
     # La función debe contemplar si se le pasa una lista vacia
     # (es decir, de "0" elementos)
 
+    
+    sumatoria_numeros = sum(numeros)
+    cantidad_numeros = len(numeros)
+
+    if cantidad_numeros > 0:
+        resultado = sumatoria_numeros / cantidad_numeros    
+    else:
+        print('La lista está vacía')
+        return 0
+
     return resultado
 
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     
-    numeros = [2, 4, 6, 8, 10, 12]
 
+    numeros = [2, 4, 6, 8, 10, 12]
+    
     # Alumno: Complete la función "promedio"
 
     # Llamar a la función en este lugar y capturar el valor del retorno
+    
+    
+
     resultado_promedio = promedio(numeros)
 
     # Luego imprimir en pantalla el valor resultante:
